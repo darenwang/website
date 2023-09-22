@@ -9,7 +9,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 <style> .content {   font-size: 19px;
         font-family: Lato;
-  max-width: 650px;
+  max-width: 800px;
   margin: auto;
 }
 .right {
@@ -17,7 +17,16 @@
 }
 ul.nomargin {
     margin:  15;
-  padding: 0;}
+  padding-left: 0;}
+ol.nomargin {
+    margin:  15;
+   padding-left: 0;}
+
+li::before {
+  content: "";
+  width: 0px;
+  display: inline-block;
+}
 </style>
  </head>
 
@@ -37,11 +46,9 @@ ul.nomargin {
  </h3> 
 	
 	<h2>   Software  </h2>
-	<ul  class="nomargin" style= "width: 650px;"> 
-		<li>
-		
-		[<a href="https://cran.r-project.org/web/packages/changepoints/index.html" style="color:#800080;">changepoints</a>]  
-	an R package containing several methods for change point localization.
+	<ul  class="nomargin" style= "width: 800px;"> 
+		<li> [<a href="https://cran.r-project.org/web/packages/changepoints/index.html" style="color:#800080;">changepoints</a>]  
+	an R package containing several methods for change point localization 
 
 	</li>
 </br>    
@@ -49,7 +56,7 @@ ul.nomargin {
 <h2>   Publications  </h2>
  <p>(* indicates student collaborators)</p>
 
-<ol  style="line-height:180%"; margin-left:0px;>
+<ol  class="nomargin" style="line-height:180%"  >
   
 
 <li>
@@ -280,11 +287,18 @@ Journal of Machine Learning Research</i>, 20.170: 1-50.
 
 
 
+
+
+
+
+
+
+
+
 </ol>
 
 <h2> Preprints</h2>
-<ol  style="line-height:180%">
-
+<ol  class="nomargin" style="line-height:180%"  >
  
 	
 
