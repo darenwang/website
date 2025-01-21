@@ -1,112 +1,133 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Daren Wang's Homepage</title>
- 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta name="robots" content="index,follow">
-     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  	<link rel="stylesheet" type="text/css" media="screen,print" href="css/style.css" />
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
-	<style>
-.content {        font-size: 19px;
-        font-family: Lato;
-  max-width: 650px;
-  margin: auto;
-}
-ul.nomargin {
-    margin: 15;
-  padding: 0;}
-img {
-  float: left;
-  border: 1px dotted black;
-  margin: 0px 80px 15px 20px;
-} 
-.center {
- text-align: center
-}
- .right {
- text-align: right
-}
-</style>
- </head>
+  <meta charset="UTF-8" />
+  <title>Daren Wang's Homepage</title>
+  
+  <!-- Ensures mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="robots" content="index,follow" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+  <!-- Your Custom CSS (optional if you have a separate style.css) -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <style>
+    /* Basic resets and font settings */
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+      font-size: 19px;
+    }
+
+    .content {
+      max-width: 650px;
+      margin: auto;
+      padding: 0 15px; /* Optional: to give some space on mobile devices */
+    }
+
+    /* Navigation */
+    nav.right {
+      text-align: right;
+      margin: 20px 0;
+    }
+    nav.right a {
+      color: #0000FF;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav.right a:hover {
+      color: #5555FF; /* Example hover color */
+    }
+
+    /* Image styling */
+    .img-responsive {
+      max-height: 230px;
+      border: 1px dotted black;
+      margin: 0 80px 15px 20px;
+      float: left;
+    }
+
+    /* UL styling */
+    ul.nomargin {
+      margin: 15px 0;
+      padding: 0;
+    }
+
+    /* Utility classes */
+    .right { text-align: right; }
+    .center { text-align: center; }
+    .clearfix { clear: both; }
+  </style>
+</head>
 
 <body>
-<div class="content">
-  
 
+  <div class="content">
+    
+    <!-- Navigation -->
+    <nav class="right">
+      <a href="index.html">Home</a> /
+      <a href="publications.html">Research</a> /
+      <a href="group.html">Group</a> /
+      <a href="teaching.html">Teaching</a>
+    </nav>
 
- <br> 
-<h3><p class="right">
-<a href="index.html" style="color:#0000FF;" > Home </a> /
-  <a href="publications.html" style="color:#0000FF;" >Research </a> /
-  <a href="group.html" style="color:#0000FF;">Group</a> /
-  <a href="teaching.html" style="color:#0000FF;">Teaching</a>  </p>
- </h3> 
- 
-<div class="row">
-<div class="col-sm-4">
- <img class="img-responsive" style="max-height:230px;" src="daren2.png"/>
- </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <!-- Add an alt attribute to the image for better accessibility -->
+        <img class="img-responsive" src="daren2.png" alt="Photo of Daren Wang" />
+      </div>
+      <div class="col-sm-6">
+        <div class="clearfix visible-xs-block"></div>
+        
+        <h1>Daren Wang</h1>
+        <p style="font-size: 18px;">
+          Assistant Professor<br>
+          <a href="https://acms.nd.edu">Department of ACMS</a> <br>
+          <a href="https://www.nd.edu">University of Notre Dame</a><br><br>
+          <b>Office</b>: 152D Hurley Hall <br>
+          <b>Email</b>: dwang24 AT nd DOT edu<br><br>
+          <a href="https://scholar.google.com/citations?user=xUehfqwAAAAJ&hl=en">Google Scholar</a>
+        </p>
+      </div>
+    </div><!-- end .row -->
 
-<div class="col-sm-6">
-<div class="clearfix visible-xs-block"></div>
- <h1>Daren Wang </h1>
+    <br>
+    <hr/>
 
- 
- 
+    <!-- About Section -->
+    <h2 id="bio">About</h2>
+    <p>
+      I am an Assistant Professor of Statistics in the Department of ACMS at the University of Notre Dame. 
+      Previously, from 2018 to 2021, I was a Postdoc in the Department of Statistics at the University of Chicago 
+      under the supervision of Prof. <a href="https://voices.uchicago.edu/willett/">Rebecca Willett</a>.
+      Before that, I completed my Ph.D. in statistics at Carnegie Mellon University in 2018 
+      under the supervision of Prof. <a href="http://www.stat.cmu.edu/~arinaldo/">Alessandro Rinaldo</a> 
+      and Prof. <a href="http://www.stat.cmu.edu/people/faculty/genovese">Christopher Genovese</a>.
+    </p>
 
-<p style="font-size: 18px">Assistant Professor<br>
-<a href="https://acms.nd.edu">Department of ACMS</a> <br>
-<a href="https://www.nd.edu">University of Notre Dame</a>
+    <hr/>
 
- <br>
-<b>Office</b>: 152D Hurley    Hall <br>
-<b>Email</b>: dwang24 AT nd DOT edu
-<br>
-<br>
- <a href="https://scholar.google.com/citations?user=xUehfqwAAAAJ&hl=en" style="color:#0000FF;">Google Scholar</a> 
+    <!-- Research Interests Section -->
+    <h2 id="research">Research Interests</h2>
+    <ul class="nomargin">
+      <li>Nonparametric estimation in high-dimensions</li>
+      <li>Change point detection and inference</li>
+      <li>High-dimensional time series analysis</li>
+      <li>Network analysis</li>
+    </ul>
+    
+    <!-- Footer or additional sections can go here -->
+    
+  </div><!-- end .content -->
 
- 
-</p>
-</div>
-
-</div><! end of  class="row">
-<br>
-<hr/>
-
-
-
- <h2 id="bio">About</h2>
-<p>
-     I am an Assistant Professor of Statistics in the   Department of ACMS  at the University of Notre Dame. 
-	Previously, from 2018 to 2021, I was a Postdoc in the Department of Statistics at the University of Chicago  
-	under the supervision of Prof. <a href="https://voices.uchicago.edu/willett/" style="color:#0000FF;">Rebecca Willett</a>.
-	Before that, I completed my Ph.D. in statistics at
- Carnegie Mellon University  in 2018  under the supervision of 
-	Prof. <a href="http://www.stat.cmu.edu/~arinaldo/" style="color:#0000FF;">Alessandro Rinaldo</a> and Prof.
-<a href="http://www.stat.cmu.edu/people/faculty/genovese" style="color:#0000FF;">Christopher Genovese</a>.
-</p>
- 
-<hr/>
-<h2 id="research">Research Interests</h3>
- 
-<ul  class="nomargin">
-<li> Nonparametric estimation in high-dimensions </li>
-<li> Change point detection and inference</li>
-<li> High-dimensional time series analysis </li>
-  <li> Network analysis </li>
-
-
-
-</ul>
- 
- 
-
- 
-
-<hr/>
-  </div>
 </body>
 </html>
