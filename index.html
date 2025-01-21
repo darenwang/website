@@ -1,42 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Daren Wang's Homepage</title>
   
   <!-- Ensures mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <meta name="robots" content="index,follow" />
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
-  <!-- Your Custom CSS (optional if you have a separate style.css) -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
   <style>
-    /* Basic resets and font settings */
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      font-family: 'Lato', sans-serif;
-      font-size: 19px;
+      font-family: 'Helvetica', sans-serif;
     }
-
+    
     .content {
-      max-width: 650px;
+      max-width: 800px; /* Adjust as desired */
       margin: auto;
-      padding: 0 15px; /* Optional: to give some space on mobile devices */
+      padding: 20px;
     }
-
-    /* Navigation */
+    
+    /* Basic styling for the navigation (optional) */
     nav.right {
       text-align: right;
-      margin: 20px 0;
+      margin-bottom: 20px;
     }
     nav.right a {
       color: #0000FF;
@@ -44,35 +34,22 @@
       margin: 0 10px;
     }
     nav.right a:hover {
-      color: #5555FF; /* Example hover color */
+      color: #5555FF;
     }
 
-    /* Image styling */
-    .img-responsive {
-      max-height: 230px;
-      border: 1px dotted black;
-      margin: 0 80px 15px 20px;
-      float: left;
+    /* Example styling for the image */
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px dotted #000;
     }
-
-    /* UL styling */
-    ul.nomargin {
-      margin: 15px 0;
-      padding: 0;
-    }
-
-    /* Utility classes */
-    .right { text-align: right; }
-    .center { text-align: center; }
-    .clearfix { clear: both; }
   </style>
 </head>
-
 <body>
 
   <div class="content">
     
-    <!-- Navigation -->
+    <!-- Navigation (optional) -->
     <nav class="right">
       <a href="index.html">Home</a> /
       <a href="publications.html">Research</a> /
@@ -80,54 +57,33 @@
       <a href="teaching.html">Teaching</a>
     </nav>
 
+    <!-- Row for the photo on the left and the text on the right -->
     <div class="row">
-      <div class="col-sm-4">
-        <!-- Add an alt attribute to the image for better accessibility -->
-        <img class="img-responsive" src="daren2.png" alt="Photo of Daren Wang" />
+      
+      <!-- Left column with the image -->
+      <div class="col-md-4">
+        <img src="daren2.png" alt="Daren Wang">
       </div>
-      <div class="col-sm-6">
-        <div class="clearfix visible-xs-block"></div>
-        
+      
+      <!-- Right column with heading, paragraph, links, etc. -->
+      <div class="col-md-8">
         <h1>Daren Wang</h1>
         <p style="font-size: 18px;">
           Assistant Professor<br>
           <a href="https://acms.nd.edu">Department of ACMS</a> <br>
           <a href="https://www.nd.edu">University of Notre Dame</a><br><br>
-          <b>Office</b>: 152D Hurley Hall <br>
-          <b>Email</b>: dwang24 AT nd DOT edu<br><br>
-          <a href="https://scholar.google.com/citations?user=xUehfqwAAAAJ&hl=en">Google Scholar</a>
+          <strong>Office</strong>: 152D Hurley Hall <br>
+          <strong>Email</strong>: dwang24 AT nd DOT edu<br><br>
+          <a href="https://scholar.google.com/citations?user=xUehfqwAAAAJ&hl=en">
+            Google Scholar
+          </a>
         </p>
       </div>
-    </div><!-- end .row -->
+    </div><!-- .row -->
 
-    <br>
-    <hr/>
-
-    <!-- About Section -->
-    <h2 id="bio">About</h2>
-    <p>
-      I am an Assistant Professor of Statistics in the Department of ACMS at the University of Notre Dame. 
-      Previously, from 2018 to 2021, I was a Postdoc in the Department of Statistics at the University of Chicago 
-      under the supervision of Prof. <a href="https://voices.uchicago.edu/willett/">Rebecca Willett</a>.
-      Before that, I completed my Ph.D. in statistics at Carnegie Mellon University in 2018 
-      under the supervision of Prof. <a href="http://www.stat.cmu.edu/~arinaldo/">Alessandro Rinaldo</a> 
-      and Prof. <a href="http://www.stat.cmu.edu/people/faculty/genovese">Christopher Genovese</a>.
-    </p>
-
-    <hr/>
-
-    <!-- Research Interests Section -->
-    <h2 id="research">Research Interests</h2>
-    <ul class="nomargin">
-      <li>Nonparametric estimation in high-dimensions</li>
-      <li>Change point detection and inference</li>
-      <li>High-dimensional time series analysis</li>
-      <li>Network analysis</li>
-    </ul>
+    <!-- Additional content can follow here -->
     
-    <!-- Footer or additional sections can go here -->
-    
-  </div><!-- end .content -->
-
+  </div><!-- .content -->
+  
 </body>
 </html>
