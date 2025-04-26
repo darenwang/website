@@ -1,77 +1,131 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Group</title>
-	 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  	<link rel="stylesheet" type="text/css" media="screen,print" href="css/style.css" />
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
-<style> .content {      
+  <meta charset="utf-8" />
+  <title>Group – Daren Wang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Horizontal navbar */
+    .navbar-custom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f8f9fa;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .navbar-custom .brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      line-height: 1;
+    }
+    .navbar-custom .nav {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-custom .nav-item {
+      margin-left: 1.5rem;
+    }
+    .navbar-custom .nav-link {
+      text-decoration: none;
+      color: #0056b3;
+      line-height: 1.5rem;
+      padding: 0.25rem 0;
+    }
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .nav-link.active {
+      text-decoration: underline;
+    }
+
+    /* Content styling */
+    .content {
       font-size: 19px;
- font-family: Lato;
-  max-width: 650px;
-  margin: auto;
-}
-.right {
- text-align: right
-}
-ul.nomargin {
-    margin: 15;
-  padding: 0;}
-</style>
- </head>
+      max-width: 900px;
+      margin: 1rem auto 2rem;
+      padding: 0 1rem;
+    }
 
- 
+    /* Unstyled lists to match other pages */
+    .content ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+    }
+    .content ul li {
+      margin-bottom: 0.75rem;
+      padding-left: 1rem;   /* indent */
+      position: relative;
+    }
+    .content ul li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #333;
+    }
 
- 
-
-<title>Students</title>
+    hr {
+      border: none;
+      border-bottom: 1px solid #e5e5e5;
+      margin: 2rem 0;
+    }
+  </style>
 </head>
-<body> 
-<div class="content"> <br>
- 
-<h3><p class="right">
-<a href="index.html" style="color:#0000FF;" > Home </a> /
-  <a href="publications.html" style="color:#0000FF;" >Research </a> /
-  <a href="group.html" style="color:#0000FF;">Group</a> /
-  <a href="teaching.html" style="color:#0000FF;">Teaching</a>  </p>
- </h3> 
-<br>
-<table summary="Table for page layout." id="tlayout">
- 
-  
-  
- 
- <p><b>Current Students:</b></p>
-<ul>
-<li><p>Shivam Kumar (co-advise  with Lizhen Lin).</p>
-</li>
+<body>
 
- 
+  <nav class="navbar-custom">
+    <a class="brand" href="index.html">Daren Wang</a>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="publications.html">Research</a></li>
+      <li class="nav-item"><a class="nav-link active" href="group.html">Group Members</a></li>
+    </ul>
+  </nav>
 
+  <div class="content">
+    <h2>Current Students</h2>
+    <ul>
+      <li>Shivam Kumar (co-advised with Lizhen Lin).</li>
+    </ul>
 
-</ul>
+    <hr />
 
- 
- 
- 
+    <h2>Past Students</h2>
+    <ul>
+      <li>
+        Carlos Misael Madrid Padilla, Ph.D. in Mathematics, 2024, University of Notre Dame.<br/>
+        Entry Position: Tenure-track Assistant Professor at Washington University in St. Louis.
+      </li>
+      <li>
+        Wanshan Li, Ph.D. in Statistics, 2023, Carnegie Mellon University (co-advised with Alessandro Rinaldo).<br/>
+        Entry Position: Quantitative Researcher at WizardQuant.
+      </li>
+      <li>
+        Qin Wen, M.S. in Applied Mathematics, 2021, University of Chicago (co-advised with Rebecca Willett).
+      </li>
+    </ul>
+  </div>
 
- <p><b>Past Students:</b></p>
-<ul>
-<li><p>
-Carlos Misael Madrid Padilla, Ph.D. in mathematics, 2024, University of Notre Dame. <br> 
-  Entry Position: Tenure Track Assistant Professor at  Washington University in St. Louis.    </p>
-</li>
-<li><p> Wanshan Li, Ph.D. in statistics, 2023, Carnegie Mellon Unversity (co-advised  with Alessandro Rinaldo).<br>
- Entry Position: Quantitative Researcher at WizardQuant.</p>
-</li> 
-<li><p> Qin Wen, M.S. in applied mathematics, 2021, University of Chicago (co-advised with Rebecca Willett).</p>
-</li>
- </ul>
-
- 
-</table>
 </body>
+<footer style="text-align:center; padding:1rem 0; border-top:1px solid #e5e5e5;">
+  © 2025 Daren Wang
+</footer>
 </html>
-
