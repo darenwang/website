@@ -1,405 +1,204 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Research</title>
-	 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  	<link rel="stylesheet" type="text/css" media="screen,print" href="css/style.css" />
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
-<style> .content {   font-size: 19px;
-        font-family: Lato;
-  max-width: 800px;
-  margin: auto;
-}
-.right {
- text-align: right
-}
-ul.nomargin {
-    margin:  15;
-  padding-left: 0;}
-ol.nomargin {
-    margin:  15;
-   padding-left: 0;}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research – Daren Wang</title>
 
-li::before {
-  content: "";
-  width: 0px;
-  display: inline-block;
-}
-</style>
- </head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap (optional, for general styling elsewhere) -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Your Custom Styles -->
+  <link href="css/style.css" rel="stylesheet">
 
- 
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* Horizontal navbar */
+    .navbar-custom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f8f9fa;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .navbar-custom .brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      line-height: 1;
+    }
+    .navbar-custom .nav {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-custom .nav-item {
+      margin-left: 1.5rem;
+    }
+    .navbar-custom .nav-link {
+      text-decoration: none;
+      color: #0056b3;
+      line-height: 1.5rem;
+      padding: 0.25rem 0;
+    }
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .nav-link.active {
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 1rem auto 2rem;
+      padding: 0 1rem;
+    }
+
+    /* reduced left indent for publication lists */
+    ol.publication-list {
+      margin-left: -1rem;
+    }
+    ul.list-unstyled {
+      padding-left: 1.6rem;
+    }
+    /* highlight section titles */
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      background-color: #fff3cd;
+      padding: 0.25rem 0.5rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      border-left: 4px solid #ffc107;
+      border-radius: 2px;
+    }
+  </style>
+</head>
 <body>
 
-<div class="content">
+  <nav class="navbar-custom">
+    <a class="brand" href="index.html">Daren Wang</a>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link active" href="publications.html">Research</a></li>
+      <li class="nav-item"><a class="nav-link" href="group.html">Group Members</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <!-- Software Section -->
+    <h2>Software</h2>
+    <ul class="list-unstyled">
+      <li><strong>[<a href="https://cran.r-project.org/web/packages/changepoints/index.html">changepoints</a>]</strong>
+        an R package containing several methods for change point localization.
+      </li>
+    </ul>
+
+    <!-- Publications Section -->
+    <h2>Publications</h2>
+    <p><a href="https://scholar.google.com/citations?user=xUehfqwAAAAJ&hl=en">Google Scholar</a></p>
+
+    <!-- Selected Publications -->
+    <h2>Selected Publications</h2>
+    <p><em>(* indicates student collaborators)</em></p>
+
+    <!-- Distribution Learning and Generative Models -->
+    <div>
+      <div class="section-title">Distribution Learning and Generative Models</div>
+      <ol class="publication-list pl-3">
+        <li>
+          Peng, Y.*; Yang, S.; Khoo, Y.; <strong>Wang, D.</strong> (2025).<br>
+          <em>Tensor Density Estimator by Convolution‐Deconvolution.</em><br>
+          Preprint: [<a href="https://arxiv.org/pdf/2412.18964">pdf</a>]
+        </li>
+        <li>
+          Peng, Y.*; Khoo, Y.; <strong>Wang, D.</strong> (2024).<br>
+          <em>Nonparametric estimation via variance‐reduced sketching.</em><br>
+          Preprint: [<a href="https://arxiv.org/abs/2401.11646">pdf</a>]
+        </li>
+        <li>
+          <strong>Wang, D.</strong>; Lu, X.; Rinaldo, A. (2019).<br>
+          <em>DBSCAN: Optimal rates for density based clustering.</em><br>
+          <em>Journal of Machine Learning Research</em>, 20.170:1-50. [<a href="http://jmlr.org/papers/v20/18-470.html">pdf</a>]
+        </li>
+        <li>
+          Ciollaro, M.; Genovese, C.; <strong>Wang, D.</strong> (2016).<br>
+          <em>Nonparametric clustering of functional data using pseudo‐densities.</em><br>
+          <em>Electronic Journal of Statistics</em>, 10.2:2922-2972. [<a href="https://projecteuclid.org/euclid.ejs/1477918853">pdf</a>]
+        </li>
+      </ol>
+    </div>
+
+    <!-- Supervised Learning -->
+    <div>
+      <div class="section-title">Supervised Learning</div>
+      <ol class="publication-list pl-3">
+        <li>
+          Padilla, C.M.M.*; Padilla, O.H.M.; <strong>Wang, D.</strong> (2024).<br>
+          <em>Temporal‐spatial model via Trend Filtering.</em><br>
+          Preprint: [<a href="https://arxiv.org/pdf/2308.16172">pdf</a>]
+        </li>
+        <li>
+          Zhang, Z.; Padilla, C.M.M.*; <strong>Wang, D.</strong>; Padilla, O.H.M. (2024).<br>
+          <em>Dense ReLU neural networks for temporal‐spatial model.</em><br>
+          Preprint: [<a href="https://arxiv.org/pdf/2411.09961">pdf</a>]
+        </li>
+        <li>
+          <strong>Wang, D.</strong>; Zhao, Z.; Yu, Y.; Willett, R. (2022).<br>
+          <em>Functional linear regression with mixed predictors.</em><br>
+          <em>Journal of Machine Learning Research</em>, to appear. [<a href="https://arxiv.org/abs/2012.00460">pdf</a>] [<a href="https://github.com/darenwang/functional_regression" class="code-link">R code</a>]
+        </li>
+      </ol>
+    </div>
+
+    <!-- Change Point Detection -->
+    <div>
+      <div class="section-title">Change Point Detection</div>
+      <ol class="publication-list pl-3">
+        <li>
+          Xu, H.*; <strong>Wang, D.</strong>; Zhao, Z.; Yi, Y. (2024).<br>
+          <em>Change point inference in high‐dimensional regression models under temporal dependence.</em><br>
+          Preprint: [<a href="https://arxiv.org/abs/2207.12453">pdf</a>]<br>
+          [<a href="https://cran.r-project.org/web/packages/changepoints/index.html">R package</a>]
+        </li>
+        <li>
+          Padilla, C.M.M.*; Xu, H.; <strong>Wang, D.</strong>; Padilla, O.H.M.; Yu, Y. (2023).<br>
+          <em>Change point detection and inference in multivariable nonparametric models under mixing conditions.</em><br>
+          NeurIPS 2023. [<a href="https://arxiv.org/pdf/2301.11491.pdf">pdf</a>]
+        </li>
+        <li>
+          <strong>Wang, D.</strong>; Yu, Y.; Rinaldo, A. (2021).<br>
+          <em>Optimal change point detection and localization in sparse dynamic networks.</em><br>
+          <em>Annals of Statistics</em>, 49.1:203-232. [<a href="https://arxiv.org/abs/1809.09602">pdf</a>] [<a href="https://cran.r-project.org/web/packages/changepoints/index.html">R package</a>]
+        </li>
+        <li>
+          <strong>Wang, D.</strong>; Yu, Y.; Rinaldo, A. (2020).<br>
+          <em>Univariate mean change point detection: Penalization, CUSUM and optimality.</em><br>
+          <em>Electronic Journal of Statistics</em>, 14.1:1917-1961. [<a href="https://arxiv.org/abs/1810.09498">pdf</a>] [<a href="https://cran.r-project.org/web/packages/changepoints/index.html">R package</a>]
+        </li>
+      </ol>
+    </div>
 
- 
- <br>
-<h3><p class="right">
-<a href="index.html" style="color:#0000FF;" > Home </a> /
-  <a href="publications.html" style="color:#0000FF;" >Research </a> /
-  <a href="group.html" style="color:#0000FF;">Group</a> /
-  <a href="teaching.html" style="color:#0000FF;">Teaching</a>  </p>
- </h3> 
-	
-	<h2>   Software  </h2>
-	<ul  class="nomargin" style= "width: 800px;"> 
-		<li> [<a href="https://cran.r-project.org/web/packages/changepoints/index.html" style="color:#800080;">changepoints</a>]  
-	an R package containing several methods for change point localization 
+  </div>
 
-	</li>
-</br>    
-	</ul>
-<h2>   Publications  </h2>
- <p>(* indicates student collaborators)</p>
+  <footer style="text-align:center; padding:1rem 0; border-top:1px solid #e5e5e5;">
+    © 2025 Daren Wang
+  </footer>
 
-<ol  class="nomargin" style="line-height:180%"  >
-  
+  <!-- (Optional) Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
-<li>
-       Padilla, C.M.M.*, Xu,H., <b> Wang, D.</b>, Padilla, O.H.M. and Yu, Y.    (2023).
-</br> 
-    Change point detection and inference in multivariable nonparametric models under mixing conditions.
-</br>
-<a> <i> NeurIPS 2023</i>. [<a href="https://arxiv.org/pdf/2301.11491.pdf" style="color:#0000FF;">pdf</a>]
-     </li>
-</br>	
-
-  <li>
-       Li, W.*, <b> Wang, D.</b>, and Rinaldo, A.   (2023).
-</br> 
-     Divide and conquer dynamic programming: an almost linear time change point detection methodology in high dimensions.
-</br>
-<a> <i> ICML 2023</i>. [<a href="https://arxiv.org/abs/2301.10942" style="color:#0000FF;">pdf</a>]
-     </li>
-</br>   
-
-
-<li>
-       Padilla, C.M.M.*, <b> Wang, D.</b>, Zhao, Z., and Yu, Y.    (2022).
-</br> 
-     Change-point detection for sparse and dense functional data in general dimensions.
-</br>
-<a><i> NeurIPS</i> 2022. [<a href="https://arxiv.org/abs/2205.09252" style="color:#0000FF;">pdf</a>]
-     </li>
-</br> 	
-
-
-  <li>
-       Li, W.*, <b> Wang, D.</b>, and Rinaldo, A.   (2022).
-</br> 
-     Detecting abrupt changes in sequential pairwise comparison data.
-</br>
-<a> <i> NeurIPS</i> 2022. [<a href="https://arxiv.org/pdf/2205.12431.pdf" style="color:#0000FF;">pdf</a>]
-     </li>
-</br>
-	
- <li>
-      <b>Wang, D.</b>,  Yu, Y., and  Willett, R.  (2022).
-</br>
-       Detecting abrupt changes in high-dimensional self-exciting Poisson processes.</br>
-
-<a> <i> Statistica Sinica</i>, to appear. [<a href="https://arxiv.org/abs/2006.03572" style="color:#0000FF;">pdf</a>]
-</li> 
-</br> 
-
-
-
-     
-<li>
-      <b>Wang, D.</b>, Zhao, Z., Yu, Y., and Willett, R. (2022).
-</br> 
-     Functional linear regression with mixed predictors.
-	
-
-</br>
-<a>  <i> Journal of Machine Learning Research</i>, to appear. [<a href="https://arxiv.org/abs/2012.00460" style="color:#0000FF;">pdf</a>]
-	[<a href="https://github.com/darenwang/functional_regression" style="color:#800080;">R code</a>]
-     </li>
-</br>
-
-
-	 
-
-<li>
-     Yu, Y.,  Padilla, O.H.M.,  <b>Wang, D.</b>, and Rinaldo, A.  (2022).
-</br> 
-      Network online change point localization.
-</br>
-
-<a>  <i> SIAM Journal on Mathematics of Data Science </i>,  to appear. [<a href="https://arxiv.org/abs/2101.05477" style="color:#0000FF;">pdf</a>]
-
-</li>
-</br>     
-     	
-
-
-
-     
-  <li>
-<b>Wang, D.</b>, Yu, Y., and Rinaldo, A. (2021).
-</br> 
-       Optimal change point detection and localization in sparse dynamic networks.  
-       </br>
-<a> <i> Annals of Statistics</i>, 49.1 (2021): 203-232. [<a href="https://arxiv.org/abs/1809.09602" style="color:#0000FF;">pdf</a>]
-	[<a href="https://cran.r-project.org/web/packages/changepoints/index.html" style="color:#800080;">R package</a>]
-
-</li>
-</br>
-
-
-<li>
-      Padilla, O.H.M., Yu, Y., <b>Wang, D.</b>, and Rinaldo, A.  (2021).
-</br> 
-      Optimal nonparametric multivariate change point detection and localization.  
-</br>
-
-<a>  <i> IEEE Transactions on Information Theory</i>, 68.3 (2021): 1922-1944. [<a href="https://arxiv.org/abs/1910.13289" style="color:#0000FF;">pdf</a>]
-	[<a href="https://github.com/hernanmp/MNWBS" style="color:#800080;">R code</a>]
-
-</li>
-</br>     
-     	
-
- <li>
-      Padilla, O.H.M., Yu, Y., <b>Wang, D.</b>, and Rinaldo, A.  (2021).
-</br> 
-      Optimal nonparametric change point detection and localization. 
-
-</br>
-
- <a><i> Electronic Journal of Statistics</i>, to appear. [<a href="https://arxiv.org/abs/1905.10019" style="color:#0000FF;">pdf</a>]
-	 [<a href="https://github.com/hernanmp/NWBS" style="color:#800080;">R code</a>]
-
-</li>
-</br>
-	
-
- <li>
-      <b>Wang, D.</b>, Yu, Y., and Rinaldo, A. (2021).
-</br> 
-      Optimal covariance change point localization in high dimensions.</br>
-
-<a>  <i> Bernoulli</i>, 27.1 (2021): 554-575. [<a href="https://arxiv.org/abs/1712.09912" style="color:#0000FF;">pdf</a>]
-</li>
-</br>
-
-
-
-
-
-
-     
- <li>
-     Rinaldo, A., <b>Wang, D.</b>,  Wen, Q.*,  Willett, R., and   Yu, Y. (2021).
-</br>
-       Localizing changes in high-dimensional regression models.
-
-
-</br>
-
-<a> <i>AISTATS 2021.</i> [<a href="https://arxiv.org/abs/2010.10410" style="color:#0000FF;">pdf</a>]
-	[<a href="https://cran.r-project.org/web/packages/changepoints/index.html" style="color:#800080;">R package</a>]
-
-</li>
-</br>
-
-
-
-<li>
-      <b>Wang, D.</b>, Zhao, Z., Lin, K., and Willett, R. (2021).
-</br> 
-      Statistically and computationally efficient change point localization in regression settings.
-</br>
-<a> <i> Journal of Machine Learning Research</i>, 22 (2021) 1-46.  
-	[<a href="https://arxiv.org/pdf/1906.11364.pdf" style="color:#0000FF;">pdf</a>]
-	[<a href="https://github.com/darenwang/VPBS" style="color:#800080;">R code</a>]
-
-</li>
-</br>
- 
-
-
-
-
-
-
-
-
-<li>
-<b>Wang, D.</b>, Yu, Y., and Rinaldo, A. (2020).
-</br>
-     Univariate mean change point detection: Penalization, CUSUM and optimality
-
-     </br>
-
-  <a><i> Electronic Journal of Statistics</i>, 14.1: 1917-1961.
-      [<a href="https://arxiv.org/abs/1810.09498" style="color:#0000FF;">pdf</a>]
-	  [<a href="https://cran.r-project.org/web/packages/changepoints/index.html" style="color:#800080;">R package</a>]
-
-</li>
-</br>
-
-
-
-
- <li>
-      <b>Wang, D.</b>, Lu, X., and Rinaldo, A. (2019).  
-</br>
-      DBSCAN: Optimal rates for density based clustering. 
-
-</br>
- <a>
-<i>
-Journal of Machine Learning Research</i>, 20.170: 1-50.
-[<a href="http://jmlr.org/papers/v20/18-470.html" style="color:#0000FF;">pdf</a>]
-
-</li>
-</br>
-
-
-
-
-<li> 
-     Ciollaro, M., Genovese, C., and <b>Wang, D.</b> (2016).  
-</br> 
-     Nonparametric clustering of functional data using pseudo-densities.
-</br> 
- <a><i> Electronic Journal of Statistics</i>, 10.2: 2922-2972.
-[<a href="https://projecteuclid.org/euclid.ejs/1477918853" style="color:#0000FF;">pdf</a>]
- </li>
-
-</br>
-
-
-
-  <li>
-       Perrotti, L., Walkington, N., and <b>Wang, D.</b> (2016).  
-</br> 
-       Numerical approximation of viscoelastic fluids.
-</br>
-
-<a><i> ESAIM: Mathematical Modeling and Numerical Analysis</i>, 51.3: 1119-1144.
-[<a href="https://www.esaim-m2an.org/articles/m2an/abs/2017/03/m2an150167/m2an150167.html" style="color:#0000FF;">pdf</a>]
-
-
-
-</li>
-</br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</ol>
-
-<h2> Preprints</h2>
-<ol  class="nomargin" style="line-height:180%"  >
- 
-	
-
-
-<li>
-       Khoo, Y.,  Peng, Y.*,  and <b>Wang, D</b>.   (2024).
-</br> 
-    Nonparametric estimation via variance-reduced sketching.
-</br>
-<a> Preprint. [<a href="https://arxiv.org/abs/2401.11646" style="color:#0000FF;">pdf</a>]
-     </li>
-</br>
-
-
-
-<li>
-       Xu, H.*, <b> Wang, D.</b>,  Zhao, Z.,  and Yi, Y.   (2022).
-</br> 
-    Change point inference in high-dimensional regression models under temporal dependence.
-</br>
-<a> Preprint. [<a href="https://arxiv.org/abs/2207.12453" style="color:#0000FF;">pdf</a>]
-     </li>
-</br>
-
-<li>
-        <b> Wang, D.</b> and  Zhao, Z.  (2022)
-</br> 
-    Optimal change-point testing for high-dimensional linear models with temporal dependence 
-</br>
-<a> Preprint. [<a href="https://arxiv.org/pdf/2205.03880.pdf" style="color:#0000FF;">pdf</a>]
-     </li>
-</br>
- 	
-
-
-
-
-
-
-
-
-<li>
-      <b>Wang, D.</b>, Yu, Y., Rinaldo, A., and Willett, R. (2019).
-</br> 
-      Localizing changes in high-dimensional vector autoregressive processes. 
-</br>
-
-<a> Preprint. [<a href="https://arxiv.org/abs/1909.06359" style="color:#0000FF;">pdf</a>]
-	[<a href="https://github.com/darenwang/vectordp" style="color:#800080;">R code</a>]
-
-</li>
-</br>
-
-
-
-
-<li>
-       <b>Wang, D.</b>,  Zhao, Z.,  Willett, R., and  Yau,  C.Y., (2020).
-</br>
-       Functional autoregressive processes in reproducing kernel Hilbert spaces.</br>
-
-<a> Preprint. [<a href="https://arxiv.org/abs/2011.13993" style="color:#0000FF;">pdf</a>]
-</li>
-</br>
-
-
-
-
- 
-
-
- 
-
-
- <li>
-      Chen, Y., <b>Wang, D.</b>, Rinaldo, A., and Wasserman, L. (2016).
-</br> 
-      Statistical analysis of persistence intensity functions.  </br>
-
-<a> Preprint. [<a href="https://arxiv.org/abs/1510.02502" style="color:#0000FF;">pdf</a>]
-</li>
-</br>
-
-
-
-
-
-</ol>
-
-
- </div>
 </body>
 </html>
