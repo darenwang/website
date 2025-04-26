@@ -1,102 +1,145 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Daren Wang's Homepage</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index,follow">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen,print" href="css/style.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <style>
-        .content {
-            font-size: 19px;
-            font-family: Lato;
-            max-width: 650px;
-            margin: auto;
-        }
-        ul.nomargin {
-            margin: 15;
-            padding: 0;
-        }
-        img {
-            float: left;
-            border: 1px dotted black;
-            margin: 0px 80px 15px 20px;
-        }
-        .center {
-            text-align: center;
-        }
-        .right {
-            text-align: right;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <title>Daren Wang's Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Horizontal navbar (same as first page) */
+    .navbar-custom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f8f9fa;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .navbar-custom .brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      line-height: 1;
+    }
+    .navbar-custom .nav {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-custom .nav-item {
+      margin-left: 1.5rem;
+    }
+    .navbar-custom .nav-link {
+      text-decoration: none;
+      color: #0056b3;
+      line-height: 1.5rem;
+      padding: 0.25rem 0;
+    }
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .nav-link.active {
+      text-decoration: underline;
+    }
+
+    /* Content styling */
+    .content {
+      font-size: 19px;
+      max-width: 900px;
+      margin: 1rem auto 2rem;
+      padding: 0 1rem;
+    }
+    ul.nomargin {
+      margin: 15px 0;
+      padding: 0;
+    }
+    img {
+      float: left;
+      border: 1px dotted black;
+      margin: 0 80px 15px 20px;
+    }
+    #research + ul {
+      padding-left: 1.5rem;
+    }
+  </style>
 </head>
 
 <body>
-<div class="content">
-    <br>
-    <h3>
-        <p class="right">
-            <a href="index.html" style="color:#0000FF;">Home</a> /
-            <a href="publications.html" style="color:#0000FF;">Research</a> /
-            <a href="group.html" style="color:#0000FF;">Group</a> /
-            <a href="teaching.html" style="color:#0000FF;">Teaching</a>
-        </p>
-    </h3>
 
+  <nav class="navbar-custom">
+    <a class="brand" href="index.html">Daren Wang</a>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="publications.html">Research</a></li>
+      <li class="nav-item"><a class="nav-link" href="group.html">Group Members</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
     <div class="row">
-        <div class="col-sm-4">
-            <img class="img-responsive" style="max-height:230px;" src="daren2.png" />
-        </div>
+      <div class="col-sm-4">
+        <img class="img-responsive" style="max-height:230px;" src="daren2.png" alt="Daren Wang" />
+      </div>
 
-        <div class="col-sm-6">
-            <div class="clearfix visible-xs-block"></div>
-            <h1>Daren Wang</h1>
-
-            <p style="font-size: 18px">
-                Assistant Professor<br>
-                <a href="https://acms.nd.edu">Department of ACMS</a><br>
-                <a href="https://www.nd.edu">University of Notre Dame</a>
-                <br>
-                <b>Office</b>: 152D Hurley Hall<br>
-                <b>Email</b>: dwang24 AT nd DOT edu<br>
-                <br>
-                <a href="https://scholar.google.com/citations?user=xUehfqwAAAAJ&hl=en" style="color:#0000FF;">Google Scholar</a>
-            </p>
-        </div>
+      <div class="col-sm-6">
+        <div class="clearfix visible-xs-block"></div>
+        <h1>Daren Wang</h1>
+        <p>
+          Assistant Professor<br />
+          <a href="https://acms.nd.edu">Department of ACMS</a><br />
+          <a href="https://www.nd.edu">University of Notre Dame</a><br />
+          <strong>Office</strong>: 152D Hurley Hall<br />
+          <strong>Email</strong>: dwang24 AT nd DOT edu
+        </p>
+      </div>
     </div>
-    <!-- end of row -->
-    <br>
-    <hr/>
+
+    <hr />
 
     <h2 id="bio">About</h2>
     <p>
-        I am an Assistant Professor  in the Department of ACMS at the University of Notre Dame.
-        Previously,   I was a Postdoc  at the University of Chicago
-        under the supervision of Prof.  Rebecca Willett.
-        Before that, I completed my Ph.D.  at Carnegie Mellon University   under the supervision of
-        Prof. Alessandro Rinaldo  and Prof. Christopher Genovese.
+      I am an Assistant Professor in the Department of ACMS at the University of Notre Dame.
+      Previously, I was a Postdoc at the University of Chicago under the supervision of Prof. Rebecca Willett.
+      Before that, I completed my Ph.D. at Carnegie Mellon University under the supervision of
+      Prof. Alessandro Rinaldo and Prof. Christopher Genovese.
     </p>
-    <hr/>
- <!-- New section: Seeking students -->
+    <hr />
+
     <h2 id="opportunities">For Prospective Students</h2>
     <p>
-     I am looking for   new Ph.D.  students to join my group. 
-        Our group includes members from diverse backgrounds such as applied mathematics, computational physics, machine learning, and statistics.
+      I am looking for new Ph.D. students to join my group.
+      Our group includes members from diverse backgrounds such as applied mathematics,
+      computational physics, machine learning, and statistics.
     </p>
-    <hr/>
-    <h2 id="research">Research Interests</h2>
-    <ul class="nomargin">
-        <li>Scientific computing in high dimensions</li>
-        <li>High-dimensionional linear algebra and its applications to machine learning</li>
-        <li>Nonparametric estimation in high dimensions</li>
-        <li>Change point detection and inference</li>
-        
-        
-    </ul>
-    <hr/>
+    <hr />
 
-   
-</div>
+    <h2 id="research">Research Interests</h2>
+      <ul class="list-unstyled">
+      <li>Scientific computing in high dimensions</li>
+      <li>High-dimensional linear algebra and its applications to machine learning</li>
+      <li>Nonparametric estimation in high dimensions</li>
+      <li>Change point detection and inference</li>
+    </ul>
+  
+  </div>
+
 </body>
+
+<footer style="text-align:center; padding:1rem 0; border-top:1px solid #e5e5e5;">
+    © 2025 Daren Wang
+  </footer>
 </html>
